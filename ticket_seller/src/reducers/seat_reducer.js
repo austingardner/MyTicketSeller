@@ -62,7 +62,7 @@ const de_select_seats = (stc, state) => {
     ...state,
     seats: state.seats.map((item, i) => {
       const items = item.map((a_seat, j) => {
-        if(i === stc[0] && j === stc[1]) {
+        if(i === stc[0] && j === stc[1] && a_seat === 1) {
           return a_seat = 0;
         }
         else return a_seat;
